@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive design using media queries</title>
+    <style>
+      .parent {
+        border: 2px solid black;
+        height: 50vh;
+        width: 50vw;
+      }
+      /* @media (min-width: 300px) {
+        .parent {
+          background-color: red;
+        }
+      }
+      @media (min-width: 600px) {
+        .parent {
+          background-color: green;
+        }
+      } */
+      @media (min-width: 500px) {
+        body {
+          background-color: green;
+        }
+      }
+      @media (min-width: 600px) {
+        body {
+          background-color: green;
+        }
+      }
+      @media (max-width: 500px) {
+        body {
+          background-color: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">Hello</div>
+  </body>
+</html>

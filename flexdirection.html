@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex direction</title>
+    <style>
+      .parent {
+        display: flex;
+        border: 2px solid black;
+        min-height: 50vh;
+        width: 50vw;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .item1,
+      .item2,
+      .item3,
+      .item4 {
+        height: 50px;
+        width: 50px;
+        border: 2px, solid black;
+        margin: 4px;
+      }
+      .item1 {
+        background-color: red;
+      }
+      .item2 {
+        background-color: green;
+      }
+      .item3 {
+        background-color: yellow;
+      }
+      .item4 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item2</div>
+      <div class="item4">item4</div>
+    </div>
+  </body>
+</html>
