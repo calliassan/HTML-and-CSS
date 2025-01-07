@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <h1>Form</h1>
+    <form id="booking-form">
+      <div>
+        <label for="fullname">Fullname: </label>
+        <input
+          type="text"
+          placeholder="enter full name"
+          value=""
+          name="fullname"
+          id="fullname"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          placeholder="enter email"
+          value=""
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+      <div>
+        <label for="doctor">Doctors</label>
+        <select name="doctor" id="doctor" class="form-select">
+          <option value="Ashish">Ashish</option>
+          <option value="Lisina">Lisina</option>
+          <option selected value="cookie">cookie</option>
+        </select>
+      </div>
+      <div>
+        <label for="radio">Googlemeet</label>
+        <input
+          type="radio"
+          name="location"
+          value="Googlemeet"
+          id="googlemeet"
+        />
+        <label for="radio">Hospital</label>
+        <input type="radio" name="location" value="Hospital" id="Hospital" />
+      </div>
+      <div>
+        <label for="date">Date: </label>
+        <input type="datetime-local" name="date" id="date" />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

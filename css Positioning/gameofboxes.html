@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        background-color: black;
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        /* position: relative; */
+      }
+      #child1 {
+        background-color: red;
+        height: 2rem;
+        width: 2rem;
+        /* position: relative;
+        top: 5px;
+        left: 5px; */
+        position: absolute;
+      }
+      #child2 {
+        background-color: green;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        z-index: -1;
+      }
+      #child3 {
+        background-color: yellow;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child1"><br /></div>
+      <div id="child2"><br /></div>
+      <div id="child3"><br /></div>
+    </div>
+  </body>
+</html>
